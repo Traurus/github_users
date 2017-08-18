@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/repository_item_vertical_padding"
+        android:paddingBottom="@dimen/repository_item_vertical_padding">
+
+        <TextView
+            android:text="name of repository"
+            android:id="@+id/repository_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="@dimen/repository_right_margin"
+            android:layout_marginRight="@dimen/repository_left_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="@dimen/repository_name_size"
+            android:textColor="#f5879b98"
+
+            />
+
+        <TextView
+            android:text="description text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repository_description"
+            android:layout_below="@+id/repository_name"
+            android:layout_marginRight="@dimen/repository_left_margin"
+            android:layout_marginLeft="@dimen/repository_right_margin"
+            android:layout_marginTop="@dimen/repository_margin_top"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/repository_description_size"
+            android:textColor="#606969"
+            />
+        <TextView
+            android:text="created: 18.08.17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repository_created_at"
+            android:layout_below="@+id/repository_description"
+            android:layout_marginRight="@dimen/repository_right_margin"
+            android:layout_marginLeft="@dimen/repository_left_margin"
+            android:layout_marginTop="@dimen/repository_margin_top"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:textStyle="normal|italic"
+            android:textSize="@dimen/repository_date_size"
+            android:textColor="#889494"
+            />
+
+        <ImageButton
+            android:src="@mipmap/ic_more"
+            android:layout_width="@dimen/icons_buttons_size"
+            android:id="@+id/button_more"
+            android:layout_below="@+id/repository_created_at"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/repository_margin_top"
+            android:layout_marginLeft="@dimen/repository_right_margin"
+            android:layout_marginRight="@dimen/repository_left_margin"
+            android:layout_height="@dimen/icons_buttons_size"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_share"
+            android:layout_width="@dimen/icons_buttons_size"
+            android:id="@+id/button_share"
+            android:layout_below="@+id/repository_created_at"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/repository_margin_top"
+            android:layout_marginRight="@dimen/repository_right_margin"
+            android:layout_height="@dimen/icons_buttons_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

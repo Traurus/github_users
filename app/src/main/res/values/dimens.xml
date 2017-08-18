@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="repository_right_margin">15dp</dimen>
+    <dimen name="repository_left_margin">60dp</dimen>
+    <dimen name="repository_margin_top">6dp</dimen>
+
+    <dimen name="repository_description_size">15sp</dimen>
+    <dimen name="repository_date_size">11sp</dimen>
+    <dimen name="repository_name_size">24sp</dimen>
+    <dimen name="repository_item_vertical_padding">10dp</dimen>
+    <dimen name="icons_buttons_size">30dp</dimen>
+
+    <dimen name="user_image_size">65dp</dimen>
+    <dimen name="user_login_text_size">18sp</dimen>
+    <dimen name="user_id_text_size">11sp</dimen>
+</resources>

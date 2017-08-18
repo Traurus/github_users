@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/repository_item_vertical_padding"
+        android:paddingBottom="@dimen/repository_item_vertical_padding">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/user_image_size"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/user_image_size"
+            android:id="@+id/user_image" />
+        <TextView
+            android:id="@+id/user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_marginLeft="@dimen/repository_right_margin"
+            android:text="VolohovAlexandr"
+            android:textColor="#646464"
+            android:textSize="@dimen/user_login_text_size" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignBottom="@+id/user_image"
+            android:text="id:132132"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/user_id_text_size" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
